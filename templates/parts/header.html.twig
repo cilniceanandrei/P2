@@ -1,0 +1,13 @@
+<header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li class="{{ app.request.get('_route') == 'app_Bettina' ? 'active' }}"><a href="{{ path('app_Bettina') }}">Pagina personala</a></li>
+                <li class="{{ app.request.get('_route') == 'app_Test1' ? 'active' }}"><a href="{{ path('app_Test1') }}">Pagina test 1</a></li>
+                <li class="{{ app.request.get('_route') == 'app_Test2' ? 'active' }}"><a href="{{ path('app_Test2') }}">Pagina test 2</a></li>
+                <li class="{{ app.request.get('_route') == 'app_Test3' ? 'active' }}"><a href="{{ path('app_Test3') }}">Pagina test 3</a></li>
+                <li class="{{ app.request.get('_route') == 'app_Test4' ? 'active' }}"><a href="{{ path('app_Test4') }}">Pagina test 4</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

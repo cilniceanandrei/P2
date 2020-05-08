@@ -1,3 +1,23 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+app_Bettina:
+  path: /Bettina
+  controller: App\Controller\BettinaController::getPersonalPage
+
+app_Test1:
+  path: /test1
+  controller: App\Controller\BettinaController::getTest1Page
+
+app_Test2:
+  path: /test2
+  controller: App\Controller\BettinaController::getTest2Page
+
+app_Test3:
+  path: /test3
+  controller: App\Controller\BettinaController::getTest3Page
+
+app_Test4:
+  path: /test4
+  controller: App\Controller\BettinaController::getTest4Page
