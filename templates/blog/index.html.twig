@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cristea Ioan - Blog</title>
+
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/blog.css') }}">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Articole</h1>
+
+        {% if posts %}
+            <div class="posts">
+                {% for post in posts %}
+                    <div class="post">
+                        <h3 class="post-title"><a href="{{ path('blog_post_page', {'id': post.getId()}) }}">{{ post.getPostTitle() }}</a></h3>
+
+                        <div class="post-meta">
+                            <span class="post-author">{{ post.getPostAuthor() }}</span>
+                            <span class="post-date">{{ post.getPostDate()|date('d M, Y') }}</span>
+                        </div>
+
+                        <div class="post-excerpt"><p>{{ post.getPostContent() }}</p></div>
+
+                        <div class="post-links">
+                            <a class="post-edit-link" href="{{ path('blog_edit_post', {'id': post.getId()}) }}">Edit</a>
+                            <a class="post-delete-link" href="{{ path('blog_delete_post', {'id': post.getId()}) }}">Sterge</a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="blog-warning">
+                Momentan nu exista articole!
+            </div>
+        {% endif %}
+
+        <a class="post-btn post-new-link" href="{{ path('blog_new_post') }}">Articol nou</a>
+
+    </div>
+
+</body>
+</html>

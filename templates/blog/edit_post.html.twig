@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cristea Ioan - Blog - New Post</title>
+
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/blog.css') }}">
+</head>
+<body>
+
+    <div class="container">
+
+        {{ form(editPostForm) }}
+
+        <a class="post-btn post-back-link" href="{{ path('blog_first_page') }}">Inapoi</a>
+
+    </div>
+
+</body>
+</html>
