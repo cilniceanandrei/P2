@@ -1,3 +1,7 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+bunulescu_stefan:
+   path: /bunulescu_stefan
+   controller: App\Controller\BunulescuStefan::index
