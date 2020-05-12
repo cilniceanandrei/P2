@@ -25,8 +25,7 @@ p{
 }
 
 img{
-    float: left;
-    width: 200px;
+    width: 666px;
     height: auto;
     margin-right: 20px;
 }
@@ -36,10 +35,3 @@ img{
     clear: both;
 }
 
-img {
-    float: left;
-    margin-right: 20px;
-    width: 200px;
-    height: auto;
-
-}

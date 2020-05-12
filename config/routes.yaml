@@ -2,6 +2,10 @@
 #    path: /
 #    controller: App\Controller\DefaultController::index
 
+app_Bettina:
+  path: /Bettina
+  controller: App\Controller\BettinaController::getPersonalPage
+
 cristea_ioan:
   path: /cristea_ioan
   controller: App\Controller\CristeaIoanController::index
@@ -29,10 +33,6 @@ blog_edit_post:
 blog_delete_post:
   path: /blog/delete_post?id={id}
   controller: App\Controller\BlogController::postDeletePost
-
-app_Bettina:
-  path: /Bettina
-  controller: App\Controller\BettinaController::getPersonalPage
 
 app_Test1:
   path: /test1

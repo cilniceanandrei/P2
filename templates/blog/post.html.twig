@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Cristea Ioan - Blog - {{ post.getPostTitle() }}</title>
+{% extends 'base.html.twig' %}
 
-    <link rel="stylesheet" href="{{ asset('css/blog.css') }}">
-</head>
-<body>
+{% block title %}Cristea ioan-Blog-{{ post.getPostTitle() }}{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset("css/blog.css") }}">
+{% endblock %}
+
+{% block body %}
 
     <div class="container">
 
@@ -30,5 +30,4 @@
 
     </div>
 
-</body>
-</html>
+{% endblock %}

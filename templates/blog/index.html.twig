@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Cristea Ioan - Blog</title>
+{% extends 'base.html.twig' %}
 
-    <link rel="stylesheet" href="{{ asset('css/blog.css') }}">
-</head>
-<body>
+{% block title %}Blog-Cristea Ioan{% endblock %}
 
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset("css/blog.css") }}">
+{% endblock %}
+{% block body %}
     <div class="container">
 
         <h1>Articole</h1>
@@ -37,10 +35,7 @@
                 Momentan nu exista articole!
             </div>
         {% endif %}
-
         <a class="post-btn post-new-link" href="{{ path('blog_new_post') }}">Articol nou</a>
 
     </div>
-
-</body>
-</html>
+{% endblock %}
