@@ -1,16 +1,13 @@
+{% extends 'base.html.twig' %}
 
-<!DOCTYPE HTML>
-<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<link href="{{ asset('css/bunulescu_stefan_stil.css') }}" rel="stylesheet"/>
-
-	<title>Bunulescu Stefan</title>
-</head>
-<body>
+{% block title %}Bunulescu Stefan{% endblock %}
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ asset("css/bunulescu_stefan_stil.css") }}">
+{% endblock %}
+{% block body %}
 	<section>
 		<article>
-			<header"><h1>Bunulescu Stefan</h1></header>
+			<header><h1>Bunulescu Stefan</h1></header>
 
 				<img id="img" src="{{ asset('images/programmer.jpg') }}" alt="Carina Nebula"/>
 
@@ -33,6 +30,4 @@
 			
 		</article>	
 	</section>
-</body>
-</html>
-
+{% endblock %}
