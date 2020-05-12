@@ -2,6 +2,10 @@
 #    path: /
 #    controller: App\Controller\DefaultController::index
 
+bunulescu_stefan:
+   path: /bunulescu_stefan
+   controller: App\Controller\BunulescuStefan::index
+
 app_Bettina:
   path: /Bettina
   controller: App\Controller\BettinaController::getPersonalPage
