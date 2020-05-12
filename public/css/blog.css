@@ -1,0 +1,143 @@
+.container {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0 0 40px;
+    font-size: 46px;
+}
+
+#form > div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+}
+
+input {
+    height: 32px;
+}
+
+textarea {
+    height: 300px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.blog-warning {
+    margin-bottom: 40px;
+}
+
+.posts .post {
+    margin-bottom: 44px;
+    padding-bottom: 44px;
+    border-bottom: 1px solid #ccc;
+}
+.post h3 {
+    margin: 0 0 10px;
+    font-size: 30px;
+}
+.post h3 a {
+    text-decoration: none;
+    color: #000;
+}
+.post h3 a:hover {
+    color: #555;
+}
+
+.post .post-meta {
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: #555;
+}
+.post .post-author {
+    position: relative;
+    margin-right: 6px;
+    padding-right: 15px;
+}
+.post .post-author:after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: #999;
+    top: 50%;
+    right: 0;
+    transform: translateX(-50%);
+    border-radius: 100px;
+}
+
+.post .post-excerpt {
+    margin-bottom: 20px;
+}
+.post p {
+    margin: 0 0 6px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.post-links {
+    font-size: 12px;
+}
+.post-links a {
+    text-decoration: none;
+    color: #555;
+}
+.post-links a:hover {
+    color: #000;
+}
+.post-edit-link {
+    position: relative;
+    margin-right: 6px;
+    padding-right: 15px;
+}
+.post-edit-link:after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: #999;
+    top: 50%;
+    right: 0;
+    transform: translateX(-50%);
+    border-radius: 100px;
+}
+
+.post-btn,
+#form_submit {
+    display: inline-block;
+    padding: 0 14px;
+    font-size: 13px;
+    line-height: 34px;
+    background-color: #28a745;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+}
+.post-btn:hover,
+#form_submit:hover {
+    background-color: #218838;
+}
+
+.post-back-link {
+    background: #666;
+}
+.post-back-link:hover {
+    background-color: #444;
+}
+
+#form_submit {
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+}
