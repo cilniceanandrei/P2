@@ -1,0 +1,22 @@
+body {
+	background-color: #DCDCDC;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+img{
+	float: right;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	width: 340px;
+	height: 340px;
+
+}
+
+#side-article
+{
+	clear: right;
+}
