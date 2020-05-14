@@ -49,3 +49,15 @@ app_Test3:
 app_Test4:
   path: /test4
   controller: App\Controller\BettinaController::getTest4Page
+
+cilnicean_andrei:
+  path: /cilnicean_andrei
+  controller: App\Controller\CilniceanAndrei::homepage
+
+moises_dorin:
+  path: /moises_dorin
+  controller: App\Controller\MoisesDorin::number
+
+denis_padureanu:
+  path: /denis_padureanu
+  controller: App\Controller\PadureanuDenis::number
