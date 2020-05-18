@@ -24,11 +24,11 @@ header {
 }
 li{
     height: 30px;
-
 }
 img {
     float: left;
     margin-left: 20px;
+    margin-right: 20px;
     width: 200px;
     height: auto;
 }
